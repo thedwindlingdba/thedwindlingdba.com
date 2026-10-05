@@ -1,0 +1,40 @@
+baseURL = "https://thedwindlingdba.com/"
+languageCode = "en-us"
+title = "The Dwindling DBA"
+theme = "PaperMod"
+
+[params]
+  author = "Dustin Marzolf"
+  description = "One senior DBA, 25,000+ databases, 300+ Azure SQL VMs. Fleet operations with runnable scripts, not vibes."
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  defaultTheme = "auto"
+
+[params.homeInfoParams]
+  Title = "The Dwindling DBA"
+  Content = "Large-scale SQL Server fleet operations from the practitioner running 25,000+ databases solo. Registry, automation, patching rings, monitoring, and the career math behind the dwindling."
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 30
